@@ -19,7 +19,7 @@ services:
       - traefik.http.routers.traefik-dashboard-https.entrypoints=https
       - traefik.http.routers.traefik-dashboard-https.rule=Host(`traefik.${DOMAIN?Variable not set}`)
       - traefik.http.routers.traefik-dashboard-https.tls=true
-      - traefik.http.routers.traefik-dashboard-https.tls.certresolver=letsencrypt
+      - traefik.http.routers.traefik-dashboard-https.tls.certresolver=le
       - traefik.http.routers.traefik-dashboard-https.service=api@internal
 
       # HTTPS redirect middleware
@@ -43,9 +43,9 @@ services:
       - --entrypoints.https.address=:443
 
       # Let's Encrypt configuration
-      - --certificatesresolvers.letsencrypt.acme.email=${ACME_EMAIL?Variable not set}
-      - --certificatesresolvers.letsencrypt.acme.storage=/certificates/acme.json
-      - --certificatesresolvers.letsencrypt.acme.tlschallenge=true
+      - --certificatesresolvers.le.acme.email=${ACME_EMAIL?Variable not set}
+      - --certificatesresolvers.le.acme.storage=/certificates/acme.json
+      - --certificatesresolvers.le.acme.tlschallenge=true
 
       # Logging and API configuration
       - --accesslog
