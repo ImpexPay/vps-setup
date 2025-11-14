@@ -22,3 +22,7 @@
 	path = payment_agencies/exima
 	url = git@github.com:ImpexPay/payment_agencies.git
 	branch = exima
+[submodule "ihi-portfolio"]
+	path = ihi-portfolio
+	url = git@github.com:ImpexPay/ihi-portfolio.git
+	branch = master
