@@ -1,0 +1,24 @@
+[submodule "dzenpay"]
+	path = dzenpay
+	url = git@github.com:ImpexPay/payment_agencies.git
+	branch = dzenpay
+[submodule "dzenpay_dev"]
+	path = dzenpay_dev
+	url = git@github.com:ImpexPay/payment_agencies.git
+	branch = dzenpay_dev
+[submodule "payment_agencies/dzenpay"]
+	path = payment_agencies/dzenpay
+	url = git@github.com:ImpexPay/payment_agencies.git
+	branch = dzenpay
+[submodule "payment_agencies/dzenpay_dev"]
+	path = payment_agencies/dzenpay_dev
+	url = git@github.com:ImpexPay/payment_agencies.git
+	branch = dzenpay_dev
+[submodule "payment_agencies/exima_dev"]
+	path = payment_agencies/exima_dev
+	url = git@github.com:ImpexPay/payment_agencies.git
+	branch = exima_dev
+[submodule "payment_agencies/exima"]
+	path = payment_agencies/exima
+	url = git@github.com:ImpexPay/payment_agencies.git
+	branch = exima
