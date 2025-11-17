@@ -51,6 +51,10 @@ services:
       - --accesslog
       - --log
       - --api
+
+      # Metrics
+      - --metrics.otlp
+      - --metrics.prometheus
     networks:
       - traefik-public
 
