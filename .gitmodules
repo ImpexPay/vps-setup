@@ -26,3 +26,11 @@
 	path = ihi-portfolio
 	url = git@github.com:ImpexPay/ihi-portfolio.git
 	branch = master
+[submodule "payment_agencies/bank5"]
+	path = payment_agencies/bank5
+	url = git@github.com:ImpexPay/payment_agencies.git
+	branch = bank5
+[submodule "payment_agencies/bank5_dev"]
+	path = payment_agencies/bank5_dev
+	url = git@github.com:ImpexPay/payment_agencies.git
+	branch = bank5_dev
