@@ -63,7 +63,7 @@ services:
     restart: always
     networks:
       - monitoring
-      - traefik_public
+      - traefik-public
     volumes:
       - grafana_data:/var/lib/grafana
     env_file:
