@@ -70,6 +70,7 @@ services:
       - .env
     labels:
       - traefik.enable=true
+      - traefik.docker.network=traefik-public
 
       # -------------------------------
       # HTTP ROUTER
@@ -87,7 +88,7 @@ services:
       - traefik.http.routers.grafana-https.service=grafana-service
 
       # -------------------------------
-      # HTTP → HTTPS MIDDLEWARE
+      # MIDDLEWARES
       # -------------------------------
       - traefik.http.middlewares.https-redirect.redirectscheme.scheme=https
       - traefik.http.middlewares.https-redirect.redirectscheme.permanent=true
