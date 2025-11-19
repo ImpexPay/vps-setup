@@ -62,8 +62,8 @@ services:
     container_name: grafana
     restart: always
     networks:
-      - traefik_network
-      - default
+      - monitoring
+      - traefik_public
     volumes:
       - grafana_data:/var/lib/grafana
     env_file:
