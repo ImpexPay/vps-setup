@@ -5,6 +5,7 @@ services:
     ports:
       - 80:80 # HTTP port
       - 443:443 # HTTPS port
+      - 8080
     restart: always
     labels:
       # Traefik configuration
